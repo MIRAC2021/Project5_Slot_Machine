@@ -148,7 +148,6 @@ namespace Project5_Slot_Machine
                         balance -= bet;
                     }
                 }
-
                 else if (mode == VERTICAL)
                 {
                     // Vertical
@@ -180,8 +179,6 @@ namespace Project5_Slot_Machine
                         balance -= bet;
                     }
                 }
-
-
                 else if (mode == DIAGONAL)
                 {
                     // Diagonal 1
@@ -216,7 +213,7 @@ namespace Project5_Slot_Machine
                         }
                     }
 
-                    if (counter == (machineSize - 1))
+                    if (counter == (machineSize + 1))
                     {
                         Console.WriteLine("You won on diagonal 2!");
                         balance += bet;
