@@ -7,6 +7,16 @@ namespace Project5_Slot_Machine
     {
         static void Main(string[] args)
         {
+
+            const int SMALLEST_SLOT_NUMBER = 1;
+            const int LARGEST_SLOT_NUMBER = 10;
+            const int MIDDLE = 1;
+            const int HORIZONTAL = 2;
+            const int VERTICAL = 3;
+            const int DIAGONAL = 4;
+            const int JACKPOT = 5;
+
+
             Console.WriteLine("Welcome to the Slot Machine!");
 
             double balance = 0;
@@ -63,14 +73,6 @@ namespace Project5_Slot_Machine
                 int[,] SlotMachine = new int[machineSize, machineSize];
 
                 Random random = new Random();
-
-                int SMALLEST_SLOT_NUMBER = 1;
-                int LARGEST_SLOT_NUMBER = 10;
-                int MIDDLE = 1;
-                int HORIZONTAL = 2;
-                int VERTICAL = 3;
-                int DIAGONAL = 4;
-                int JACKPOT = 5;
 
                 //SlotMachine = new int[3, 3] { { 10, 10, 10 }, { 10, 10, 10 }, { 10, 10, 10 } };
 
